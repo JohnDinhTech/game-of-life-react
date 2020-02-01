@@ -1,3 +1,16 @@
+.grid-container {
+	margin: 0 auto;
+	background-color: #000000;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-container div {
+	box-sizing: border-box;
+
+	border: 1px solid rgb(46, 46, 46);
+}
+
 .cell-1 {
 	background-color: white;
 }

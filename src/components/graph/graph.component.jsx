@@ -8,11 +8,11 @@ export default class Graph extends Component {
 
 		this.state = {
 			dimensions: {
-				length: 64, // In "cells". Ex: cellSize = 20; lengthInPixels = dimensions.length * cellSize;
-				width: 36
+				length: 36, // In "cells". Ex: cellSize = 20; lengthInPixels = dimensions.length * cellSize;
+				width: 64,
 			},
 
-			cellSize: 20 // In Pixels
+			cellSize: 20, // In Pixels
 		};
 	}
 
@@ -45,7 +45,7 @@ export default class Graph extends Component {
 							height: `${this.state.cellSize}px`,
 							display: "inline-block",
 							margin: 0,
-							padding: 0
+							padding: 0,
 						}}
 					/>
 				);
@@ -57,9 +57,10 @@ export default class Graph extends Component {
 	render() {
 		return (
 			<div
+				className='grid-container'
 				style={{
-					backgroundColor: "#000",
-					width: "1280px"
+					width: `${this.state.cellSize *
+						this.state.dimensions.width}px`,
 				}}
 			>
 				{this.gridToHTML(this.createGridArr())}

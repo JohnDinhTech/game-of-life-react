@@ -1,6 +1,6 @@
 .grid-container {
 	margin: 0 auto;
-	background-color: #000000;
+	background-color: #210124;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -11,6 +11,6 @@
 	border: 1px solid rgb(46, 46, 46);
 }
 
-.cell-1 {
-	background-color: white;
+.cell-0 {
+	background-color: #b3dec1;
 }
